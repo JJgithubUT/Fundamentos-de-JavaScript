@@ -5,7 +5,7 @@ function createCube(size) {
     linea = '';
     let pinzas = '/\\'.repeat(i);
     let otroLado = '_\\'.repeat(size);
-    espaciado = ' '.repeat(size - i);
+    let espaciado = ' '.repeat(size - i);
     linea = espaciado + pinzas + otroLado;
     cubo = cubo + linea + '\n'
   }
@@ -14,7 +14,7 @@ function createCube(size) {
     linea = '';
     let pinzas = '\\/'.repeat(i);
     let otroLado = '_/'.repeat(size);
-    espaciado = ' '.repeat(size - i);
+    let espaciado = ' '.repeat(size - i);
     linea = espaciado + pinzas + otroLado;
     cubo = cubo + linea + '\n'
   }
@@ -22,5 +22,5 @@ function createCube(size) {
   return cubo;
 }
 
-const cubeOfOne = createCube(5);
+const cubeOfOne = createCube(10);
 console.log(cubeOfOne);
