@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola Mágica</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+            color: aqua;
+        }
+
+        main {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            border: 6px solid aqua;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            text-shadow: rgba(0, 255, 255, 0.80) 0px 0px 30px;
+            box-shadow: rgba(0, 255, 255, 0.65) 0px 0px 50px;
+        }
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            color: inherit;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 5vw;
+            text-shadow: rgba(0, 255, 255, 0.65) 0px 0px 50px;;
+        }
+        button:hover {
+            text-shadow: rgb(18, 21, 193) 0px 0px 100px;
+            color: rgb(82, 82, 239);
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Pregúnta a la Bola Mágica</h1>
+        <button id="botonKuni">玉</button>
+    </main>
+
+    <script src="./eightball.js"></script>
+</body>
+</html>

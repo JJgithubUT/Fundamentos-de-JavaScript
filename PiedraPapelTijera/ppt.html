@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel Tijeras</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        .content {
+            width: 60%;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .row {width: 100%;}
+        .users {display: flex;}
+        .users div {width: 50%;}
+        button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            background-color: blueviolet;
+            color: yellow;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: rgb(62, 98, 221);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="row">
+            <button id="boton_jugar">遊ぶ</button>
+            <button id="boton_recargar">レカルガル</button>
+        </div>
+        <div class="row users" id="jugador">
+            <div id="panel_jugador">Usuario</div>
+            <div id="panel_pc">Computadora</div>
+        </div>
+        <div class="row">
+            <h1 id="panel_resultados">Resultado</h1>
+        </div>
+    </div>
+
+    <script src="./ppt.js"></script>
+
+</body>
+</html>
