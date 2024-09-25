@@ -1,0 +1,22 @@
+function wrapping(gifts) {
+    return gifts.map(gift => {
+        let tapa = '*'.repeat(gift.length + 2);
+        let g = `${ tapa }\n*${ gift }*\n${ tapa }`;
+        envueltos.push(g);
+        tapa = '*'; 
+    });
+}
+
+const cars = ['vocho', 'athos', 'pointer', 'tsuru', 'bmw']
+const gifts = ['cat', 'game', 'socks'];
+const carsEnvueltos = wrapping(cars);
+const wrapped = wrapping(gifts);
+  
+console.log(wrapped);
+carsEnvueltos.forEach(car => console.log(car));
+/* [
+    "*****\n*cat*\n*****",
+    "******\n*game*\n******",
+    "*******\n*socks*\n*******"
+] */
+    
