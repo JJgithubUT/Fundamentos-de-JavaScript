@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html lang="es"></html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos de JavaScript</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            color: aqua;
+        }
+
+        .btn {
+            padding: 20px;
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: green;
+            color: brown;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .content {
+            width: 60%;
+            height: inherit;
+            display: flex; /* Cambiado a flex */
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            text-shadow: rgba(0, 255, 255, 0.5) 0px 0px 30px; /* Ajustada la sombra */
+        }
+        a:hover {
+            text-shadow: rgb(18, 21, 193) 0px 0px 40px; /* Ajustada la sombra */
+            color: rgb(82, 82, 239);
+        }
+    </style>
 </head>
 <body>
-
     <h1>Fundamentos de JavaScript</h1>
-
-    <script src="./app.js"></script>
-
+    <div class="content">
+        <a href="./PiedraPapelTijera8Ball/eightball.html">8-BALL(八玉)</a>
+        <a href="./PiedraPapelTijera8Ball/ppt.html">PIEDRA, PAPEL y TIJERAS(石と紙と鋏)</a>
+    <div>
 </body>
-</html>
